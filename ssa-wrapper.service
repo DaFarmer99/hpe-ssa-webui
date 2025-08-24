@@ -1,0 +1,12 @@
+[Unit]
+Description=HPE SSA Web GUI wrapper
+After=network.target
+
+[Service]
+ExecStart=/opt/smartstorageadmin/ssa/ssa-wrapper.sh
+Restart=always
+User=root
+WorkingDirectory=/root
+
+[Install]
+WantedBy=multi-user.target
